@@ -1,0 +1,43 @@
+:root {
+    --main-color: #9ECAD6;
+    --primary-color: #748DAE;
+    --second-color: #F5CBCB;
+    --third-color: #FFEAEA;
+    --text-color: #001c00;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.header {
+    background: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 15px;
+    font-size: large;
+    color: #FFFEEE;
+}
+
+.navbar {
+    background: var(--main-color);
+    color: var(--text-color);
+    display: flex;
+    /* visibility: hidden; */
+    position: fixed;
+    width: fit-content;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    flex-grow: inherit;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+}
